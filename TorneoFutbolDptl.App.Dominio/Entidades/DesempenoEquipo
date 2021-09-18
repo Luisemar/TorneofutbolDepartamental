@@ -1,0 +1,17 @@
+namespace TorneoFutbolDptl.App.Dominio
+{
+    public class DesempenoEquipo
+    {
+        // Identificador único de cada Deseempeño
+        public int Id { get; set; }
+        public float PartidosJugados {get;set;}
+        public float PartidosGanados {get;set;}
+        public float PartidosPerdidos {get;set;}
+        public float PartidosEmpatados {get;set;}
+        public float GolesAFavor {get;set;}
+        public float GolesEnContra {get;set;}
+        public float PuntosAcumulados {get;set;}
+        // Relacion entre el DesempenoEquipo y equipo
+        public Equipo Equipo { get; set; }
+    }
+}
