@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8oJG12urBSQQrsK9mB0UpoPOXmlOJz4g+uT/R04Twa+pj8yTgJsepu9LLJhWd7YQP0OXh6TvTQ+2h7pBnX/PSw==",
+  "dgSpecHash": "FB4wrx2oGcQ0+MZ6pmtbgMuMf8tRF/x5Jqzy5jN5SH567COms9NAqKKZp2CU2AG15WIEj1jSPvByo9wYzDtlwg==",
   "success": true,
-  "projectFilePath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
+  "projectFilePath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Papa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Papa\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

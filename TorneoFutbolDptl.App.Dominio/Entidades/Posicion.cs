@@ -6,5 +6,6 @@ namespace TorneoFutbolDptl.App.Dominio
         // Identificador único de cada posicion
         public int Id { get; set; }
         public string Nombre {get;set;}
+        
     }
 }

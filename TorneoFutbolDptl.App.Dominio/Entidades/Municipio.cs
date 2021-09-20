@@ -5,6 +5,7 @@ namespace TorneoFutbolDptl.App.Dominio
         // Identificador único de cada municipio
         public int Id { get; set; }
         public string Nombre { get; set; }
+        
    
     }
 }

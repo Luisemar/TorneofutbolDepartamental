@@ -10,5 +10,6 @@ namespace TorneoFutbolDptl.App.Dominio
         public Equipo Equipo { get; set; }
         // Relacion entre el Jugador y la posion FK        
         public Posicion Posicion { get; set; }
+        
     }
 }

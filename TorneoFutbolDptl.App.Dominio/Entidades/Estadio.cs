@@ -8,5 +8,6 @@ namespace TorneoFutbolDptl.App.Dominio
         public string Direccion {get;set;}
         // Relacion entre estadio y el municipio Fk
         public Municipio Municipio { get; set;}
+        
     }
 }

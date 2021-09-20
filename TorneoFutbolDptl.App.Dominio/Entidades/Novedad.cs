@@ -18,5 +18,6 @@ namespace TorneoFutbolDptl.App.Dominio
         public DateTime FechaHora  { get; set; }                        
         // Relacion entre la Novedad y el Jugador Fk
         public Jugador Jugador { get; set; } 
+        
     }
 }

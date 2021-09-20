@@ -16,6 +16,7 @@ namespace TorneoFutbolDptl.App.Dominio
         // Relacion entre Partido y el Estadio Fk
         public Estadio Estadio { get; set; } 
         // Relacion entre la Partido y la Novedad Fk
-        public Novedad Novedad { get; set; }                 
+        public Novedad Novedad { get; set; }  
+                       
     }
 }

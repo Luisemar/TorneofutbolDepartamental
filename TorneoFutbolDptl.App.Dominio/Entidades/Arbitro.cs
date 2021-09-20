@@ -9,4 +9,5 @@ namespace TorneoFutbolDptl.App.Dominio
         public string telefono {get;set;}
         public string Colegio {get;set;}
     }
+    
 }
