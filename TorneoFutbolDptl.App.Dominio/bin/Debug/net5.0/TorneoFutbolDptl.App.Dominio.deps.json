@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TorneoFutbolDptl.App.Dominio/1.0.0": {
+        "runtime": {
+          "TorneoFutbolDptl.App.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TorneoFutbolDptl.App.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
