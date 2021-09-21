@@ -9,8 +9,5 @@ namespace TorneoFutbolDptl.App.Dominio
         public Municipio Municipio {get; set;}
         // Relacion entre Equipo y DT  Fk
         public DirectorTecnico DirectorTecnico { get; set; }
-        // Relacion entre Equipo y DT  Fk DesempenoEquipo
-        public DesempenoEquipo DesempenoEquipo { get; set; }
-        
     }
 }
