@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cg5/F1+Qz/UAfoFUnl6QqsFIL5/GvPd9t4sR81X9FjEjnuBrPukJvI+X1FSMJXnhnsuvjDgjsx6iKNRDDmkvmA==",
+  "dgSpecHash": "I38a8yja0ZM0Q/tZeVG4yB7/pwcrnWFMcU3uxxRHR5HMeygMq+W/5tdteC3aoYGQhu6jXxFhY8SH3XXvD7rFUQ==",
   "success": true,
-  "projectFilePath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Consola\\TorneoFutbolDptl.App.Consola.csproj",
+  "projectFilePath": "C:\\Torneos\\TorneoFutbolDptl.App\\torneoFutboldptl.app.consola\\TorneoFutbolDptl.App.Consola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Papa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Papa\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
