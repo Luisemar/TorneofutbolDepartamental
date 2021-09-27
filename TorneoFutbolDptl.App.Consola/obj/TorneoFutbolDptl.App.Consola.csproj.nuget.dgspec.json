@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Torneos\\TorneoFutbolDptl.App\\torneoFutboldptl.app.consola\\TorneoFutbolDptl.App.Consola.csproj": {}
+    "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Consola\\TorneoFutbolDptl.App.Consola.csproj": {}
   },
   "projects": {
-    "C:\\Torneos\\TorneoFutbolDptl.App\\torneoFutboldptl.app.consola\\TorneoFutbolDptl.App.Consola.csproj": {
+    "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Consola\\TorneoFutbolDptl.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDptl.App\\torneoFutboldptl.app.consola\\TorneoFutbolDptl.App.Consola.csproj",
+        "projectUniqueName": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Consola\\TorneoFutbolDptl.App.Consola.csproj",
         "projectName": "TorneoFutbolDptl.App.Consola",
-        "projectPath": "C:\\Torneos\\TorneoFutbolDptl.App\\torneoFutboldptl.app.consola\\TorneoFutbolDptl.App.Consola.csproj",
-        "packagesPath": "C:\\Users\\Papa\\.nuget\\packages\\",
-        "outputPath": "C:\\Torneos\\TorneoFutbolDptl.App\\torneoFutboldptl.app.consola\\obj\\",
+        "projectPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Consola\\TorneoFutbolDptl.App.Consola.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -26,11 +26,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
-                "projectPath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj"
+              "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
+                "projectPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj"
               },
-              "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj": {
-                "projectPath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj"
+              "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj": {
+                "projectPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj"
               }
             }
           }
@@ -71,17 +71,17 @@
         }
       }
     },
-    "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
+    "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
         "projectName": "TorneoFutbolDptl.App.Dominio",
-        "projectPath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\Papa\\.nuget\\packages\\",
-        "outputPath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Dominio\\obj\\",
+        "projectPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -123,17 +123,17 @@
         }
       }
     },
-    "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj": {
+    "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
         "projectName": "TorneoFutbolDptl.App.Persistencia",
-        "projectPath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\Papa\\.nuget\\packages\\",
-        "outputPath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Persistencia\\obj\\",
+        "projectPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -145,8 +145,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
-                "projectPath": "C:\\Torneos\\TorneoFutbolDptl.App\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj"
+              "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
+                "projectPath": "C:\\Torneo\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj"
               }
             }
           }
