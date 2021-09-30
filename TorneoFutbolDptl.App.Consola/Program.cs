@@ -23,8 +23,8 @@ namespace TorneoFutbolDptl.App.Consola
             //AddMunicipio();
             //BuscarMunicipio(1);
             //EliminarMunicipio(3);
-            //MostrarMunicipios();
-            //UpdateMunicipio(); 
+            MostrarMunicipios();
+           // UpdateMunicipio(); 
 //------------------------------------------------
             //AddPosicion();           
             //BuscarPosicion(3);
