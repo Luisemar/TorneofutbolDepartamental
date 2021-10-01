@@ -10,3 +10,15 @@ C:\Torneos\TorneoFutbolDptl.App\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\To
 C:\Torneos\TorneoFutbolDptl.App\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.dll
 C:\Torneos\TorneoFutbolDptl.App\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbolDptl.App.Dominio.dll
 C:\Torneos\TorneoFutbolDptl.App\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.pdb
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\bin\Debug\net5.0\TorneoFutbolDptl.App.Dominio.deps.json
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\bin\Debug\net5.0\TorneoFutbolDptl.App.Dominio.dll
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\bin\Debug\net5.0\ref\TorneoFutbolDptl.App.Dominio.dll
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\bin\Debug\net5.0\TorneoFutbolDptl.App.Dominio.pdb
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.csproj.AssemblyReference.cache
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.AssemblyInfoInputs.cache
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.AssemblyInfo.cs
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.dll
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbolDptl.App.Dominio.dll
+C:\Torneo\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.pdb
