@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {}
+    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
+    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
         "projectName": "TorneoFutbolDptl.App.Dominio",
-        "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+        "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\Papa\\.nuget\\packages\\",
-        "outputPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\obj\\",
+        "outputPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
