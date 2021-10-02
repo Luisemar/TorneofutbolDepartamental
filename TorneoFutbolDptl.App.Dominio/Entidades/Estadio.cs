@@ -2,7 +2,7 @@ namespace TorneoFutbolDptl.App.Dominio
 {
     public class Estadio
     {
-        // Identificador único de cada estadio
+        // Identificador único de cada estadio hola
         public int Id { get; set; }
         public string Nombre {get;set;}
         public string Direccion {get;set;}
