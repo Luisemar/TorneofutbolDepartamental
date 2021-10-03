@@ -23,7 +23,7 @@ namespace TorneoFutbolDptl.App.Consola
             //AddMunicipio();
             //BuscarMunicipio(1);
             //EliminarMunicipio(3);
-            MostrarMunicipios();
+            //MostrarMunicipios();
            // UpdateMunicipio(); 
 //------------------------------------------------
             //AddPosicion();           
@@ -88,7 +88,7 @@ namespace TorneoFutbolDptl.App.Consola
         {
             var municipio = new Municipio
             {
-                Nombre = "Pacora",
+                Nombre = "Neira",
             };
             _repoMunicipio.AddMunicipio(municipio);
         }
@@ -194,16 +194,16 @@ namespace TorneoFutbolDptl.App.Consola
 
         private static void AsignarMunicipio()
         {
-            var municipio = _repoEstadio.AsignarMunicipio(2,4);
+            var municipio = _repoEstadio.AsignarMunicipio(1,3);
             Console.WriteLine(municipio.Nombre);
         }
 
          private  static void UpdateEstadio()
          {
-            var estadio = _repoEstadio.GetEstadio(2);
+            var estadio = _repoEstadio.GetEstadio(3);
             Console.WriteLine(estadio.Nombre);
-             estadio.Nombre = "PaloPequeño";
-             estadio.Direccion = "Calle Arriba";
+             estadio.Nombre = "PaloMediano";
+             estadio.Direccion = "En el alto";
             Console.WriteLine(estadio.Nombre);             
              _repoEstadio.UpdateEstadio(estadio);
          }
