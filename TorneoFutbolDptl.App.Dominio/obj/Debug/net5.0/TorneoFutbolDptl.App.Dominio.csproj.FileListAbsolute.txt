@@ -22,3 +22,15 @@ C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.dll
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbolDptl.App.Dominio.dll
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.pdb
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\bin\Debug\net5.0\TorneoFutbolDptl.App.Dominio.deps.json
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\bin\Debug\net5.0\TorneoFutbolDptl.App.Dominio.dll
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\bin\Debug\net5.0\ref\TorneoFutbolDptl.App.Dominio.dll
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\bin\Debug\net5.0\TorneoFutbolDptl.App.Dominio.pdb
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.csproj.AssemblyReference.cache
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.AssemblyInfoInputs.cache
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.AssemblyInfo.cs
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.dll
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbolDptl.App.Dominio.dll
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Dominio\obj\Debug\net5.0\TorneoFutbolDptl.App.Dominio.pdb
