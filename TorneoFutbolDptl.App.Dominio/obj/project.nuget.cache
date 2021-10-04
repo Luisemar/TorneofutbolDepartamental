@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OyVPVDaTgABuJrrB8yKM7+4KLfL6QZwBBL++VVxUSrGKriKgrAqu0ve9+v0Me34fjwJW4WOS8nMTDZ7tf++4rw==",
+  "dgSpecHash": "b9Ty5rGy4ET55JyXXctIebBE1PvdDHZF/340cvdQiKMYEVuj5gbhqYJ6f7jZvJ9FW5kMg/jFh8ygU8R9i6CzoA==",
   "success": true,
-  "projectFilePath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+  "projectFilePath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
