@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj": {}
+    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj": {}
   },
   "projects": {
-    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
+    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
         "projectName": "TorneoFutbolDptl.App.Dominio",
-        "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+        "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\Papa\\.nuget\\packages\\",
-        "outputPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\obj\\",
+        "outputPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,38 +56,30 @@
         }
       }
     },
-    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj": {
+    "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
         "projectName": "TorneoFutbolDptl.App.Persistencia",
-        "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
+        "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
         "packagesPath": "C:\\Users\\Papa\\.nuget\\packages\\",
-        "outputPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\obj\\",
+        "outputPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
-                "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj"
+              "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
+                "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj"
               }
             }
           }
