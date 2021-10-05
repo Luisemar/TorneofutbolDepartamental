@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {}
+    "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
+    "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+        "projectUniqueName": "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
         "projectName": "TorneoFutbolDptl.App.Dominio",
-        "projectPath": "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+        "projectPath": "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
         "packagesPath": "C:\\Users\\Leon\\.nuget\\packages\\",
-        "outputPath": "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\obj\\",
+        "outputPath": "C:\\Torneo_MicTic\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Leon\\AppData\\Roaming\\NuGet\\NuGet.Config"
