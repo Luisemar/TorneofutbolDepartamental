@@ -340,7 +340,7 @@ namespace TorneoFutbolDptl.App.Consola
 
         private static void MostrarJugador()
         {
-            IEnumerable<Jugador> jugadors = _repoJugador.GetAllJugadors();
+            IEnumerable<Jugador> jugadors = _repoJugador.GetAllJugadores();
             foreach (var jugador in jugadors)
             {
                 Console.WriteLine(jugador.Nombre);
