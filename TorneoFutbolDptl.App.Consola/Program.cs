@@ -17,14 +17,16 @@ namespace TorneoFutbolDptl.App.Consola
         private static IRepositorioArbitro _repoArbitro = new RepositorioArbitro();
         private static IRepositorioNovedad _repoNovedad = new RepositorioNovedad();
         private static IRepositorioPartido _repoPartido = new RepositorioPartido();
+        private static IRepositorioDesempenoEquipo _repoDesempenoEquipo = new RepositorioDesempenoEquipo();          
         static void Main(string[] args)
+
         {
             Console.WriteLine("Hello World!");
             //AddMunicipio();
             //BuscarMunicipio(1);
             //EliminarMunicipio(3);
             //MostrarMunicipios();
-           // UpdateMunicipio(); 
+            // UpdateMunicipio(); 
 //------------------------------------------------
             //AddPosicion();           
             //BuscarPosicion(3);
@@ -82,6 +84,13 @@ namespace TorneoFutbolDptl.App.Consola
             //AsignarArbitroPartido();
             //AsignarEstadioPartido();
             //AsignarNovedadPartido();
+//----------------------------------------------------
+            //AddDesempenoEquipo();           
+            //BuscarDesempenoEquipo(1);
+            //EliminarDesempenoEquipo(3);
+            //MostrarDesempenoEquipo();
+            //UpdateDesempenoEquipo(); 
+            //AsignarEquipo();
 //----------------------------------------------------
         }
         private static void AddMunicipio()
@@ -574,5 +583,76 @@ namespace TorneoFutbolDptl.App.Consola
             _repoPartido.UpdatePartido(partido);
 
         }
+//-------------------------------------------------------------------------------         
+       private static void AddDesempenoEquipo()
+        {
+            var desempenoEquipo = new DesempenoEquipo
+            {
+                PartidosJugados = 0,
+                PartidosGanados = 0,
+                PartidosPerdidos = 0,
+                PartidosEmpatados = 0,
+                GolesAFavor = 0,
+                GolesEnContra = 0,
+                PuntosAcumulados = 0,                
+            };
+            _repoDesempenoEquipo.AddDesempenoEquipo(desempenoEquipo);
+        }
+        private static void BuscarDesempenoEquipo(int idDesempenoEquipo)
+        {
+            var desempenoEquipo =  _repoDesempenoEquipo.GetDesempenoEquipo(idDesempenoEquipo);
+            Console.WriteLine(desempenoEquipo.Id);
+        }          
+
+        private static void EliminarDesempenoEquipo(int idDesempenoEquipo)
+        {
+            _repoDesempenoEquipo.DeleteDesempenoEquipo(idDesempenoEquipo);
+            Console.WriteLine("DesempenoEquipo Eliminado");
+        }
+
+        private static void MostrarDesempenoEquipo()
+        {
+            IEnumerable<DesempenoEquipo> desempenoEquipos = _repoDesempenoEquipo.GetAllDesempenoEquipo();
+            foreach (var desempenoEquipo in desempenoEquipos)
+            {
+                Console.WriteLine(desempenoEquipo.Id);
+            }
+        }
+
+        private static void AsignarEquipo()
+        {
+            var Equipo = _repoDesempenoEquipo.AsignarEquipo(1,1);
+            Console.WriteLine(Equipo.Nombre);
+        }
+
+
+        private  static void UpdateDesempenoEquipo()
+         {
+            var desempenoEquipo = _repoDesempenoEquipo.GetDesempenoEquipo(1);
+            Console.WriteLine(desempenoEquipo.PartidosJugados);
+            Console.WriteLine(desempenoEquipo.PartidosGanados);
+            Console.WriteLine(desempenoEquipo.PartidosPerdidos);
+            Console.WriteLine(desempenoEquipo.PartidosEmpatados);
+            Console.WriteLine(desempenoEquipo.GolesAFavor);
+            Console.WriteLine(desempenoEquipo.GolesEnContra);
+            Console.WriteLine(desempenoEquipo.PuntosAcumulados);
+
+            //desempenoEquipo.PartidosJugados = 1;
+            //desempenoEquipo.PartidosGanados = 1;
+            //desempenoEquipo.PartidosPerdidos = 1;
+            //desempenoEquipo.PartidosEmpatados = 1;
+            //desempenoEquipo..GolesAFavor = 1;
+            //desempenoEquipo..GolesEnContra = 1;            
+            //desempenoEquipo.PuntosAcumulados = 1;
+
+            Console.WriteLine(desempenoEquipo.PartidosJugados);
+            Console.WriteLine(desempenoEquipo.PartidosGanados);
+            Console.WriteLine(desempenoEquipo.PartidosPerdidos);
+            Console.WriteLine(desempenoEquipo.PartidosEmpatados);
+            Console.WriteLine(desempenoEquipo.GolesAFavor);
+            Console.WriteLine(desempenoEquipo.GolesEnContra);
+            Console.WriteLine(desempenoEquipo.PuntosAcumulados);
+            _repoDesempenoEquipo.UpdateDesempenoEquipo(desempenoEquipo);
+         }        
     }            
 }

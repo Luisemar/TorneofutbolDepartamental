@@ -8,11 +8,16 @@
     "net5.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\maham\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\Papa\\.nuget\\packages\\": {}
+>>>>>>> Luis
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
       "projectName": "TorneoFutbolDptl.App.Dominio",
       "projectPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
@@ -22,12 +27,21 @@
       "configFilePaths": [
         "C:\\Users\\maham\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+      "projectUniqueName": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+      "projectName": "TorneoFutbolDptl.App.Dominio",
+      "projectPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\Papa\\.nuget\\packages\\",
+      "outputPath": "C:\\Torneos\\TorneoFutbolDepartamental\\TorneoFutbolDptl.App.Dominio\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> Luis
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
