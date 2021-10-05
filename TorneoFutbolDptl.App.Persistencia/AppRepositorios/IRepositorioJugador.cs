@@ -8,7 +8,7 @@ namespace TorneoFutbolDptl.App.Persistencia
         Jugador AddJugador(Jugador jugador);
         Jugador GetJugador(int idJugador);
         void DeleteJugador(int idJugador);
-        IEnumerable<Jugador> GetAllJugadors(); 
+        IEnumerable<Jugador> GetAllJugadores(); 
         Jugador UpdateJugador(Jugador jugador);
         Equipo AsignarEquipoJugador(int idJugador, int idEquipo);
         Posicion AsignarPosicionJugador(int idJugador, int idPosicion);

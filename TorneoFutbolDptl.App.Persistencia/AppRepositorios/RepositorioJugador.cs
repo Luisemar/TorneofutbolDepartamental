@@ -30,7 +30,7 @@ namespace TorneoFutbolDptl.App.Persistencia
             _appContext.SaveChanges();
         } 
         
-        IEnumerable<Jugador> IRepositorioJugador.GetAllJugadors()
+        IEnumerable<Jugador> IRepositorioJugador.GetAllJugadores()
         {
             return _appContext.Jugadores;
         }
@@ -76,6 +76,6 @@ namespace TorneoFutbolDptl.App.Persistencia
                 return  posicionEncontrado;
             }
         return null;
-        }        
+        }     
     }
 }

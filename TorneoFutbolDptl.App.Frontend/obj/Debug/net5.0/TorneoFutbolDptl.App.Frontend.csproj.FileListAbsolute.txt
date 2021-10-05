@@ -73,3 +73,4 @@ C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Frontend\bin\Debug\net
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Frontend\bin\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.dll
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Frontend\bin\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.pdb
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Frontend\bin\Debug\net5.0\TorneoFutbolDptl.App.Dominio.pdb
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Index.cshtml.g.cs

@@ -58,7 +58,7 @@ namespace TorneoFutbolDptl.App.Consola
             //AddJugador();           
             //BuscarJugador(3);
             //EliminarJugador(3);
-            //MostrarJugador();
+            MostrarJugador();
             // UpdateJugador(); 
             //AsignarEquipoJugador();
             //AsignarPosicionJugador();
@@ -340,10 +340,13 @@ namespace TorneoFutbolDptl.App.Consola
 
         private static void MostrarJugador()
         {
-            IEnumerable<Jugador> jugadors = _repoJugador.GetAllJugadors();
-            foreach (var jugador in jugadors)
+            IEnumerable<Jugador> jugadores = _repoJugador.GetAllJugadores();
+            foreach (var jugador in jugadores)
             {
                 Console.WriteLine(jugador.Nombre);
+                Console.WriteLine(jugador.Numero);
+                Console.WriteLine(jugador.Equipo);
+                Console.WriteLine(jugador.Posicion);
             }
         }
 
