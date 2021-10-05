@@ -14,17 +14,14 @@
         "outputPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
           "C:\\Users\\maham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> 6dd2cccb0b79a0f49956bb838354fdd05bb571d3
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -71,17 +68,14 @@
         "outputPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
           "C:\\Users\\maham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> 6dd2cccb0b79a0f49956bb838354fdd05bb571d3
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -138,17 +132,14 @@
         "outputPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\Papa\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
           "C:\\Users\\maham\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
->>>>>>> 6dd2cccb0b79a0f49956bb838354fdd05bb571d3
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
