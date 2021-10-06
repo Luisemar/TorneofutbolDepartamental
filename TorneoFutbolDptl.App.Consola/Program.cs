@@ -58,7 +58,7 @@ namespace TorneoFutbolDptl.App.Consola
             //AddJugador();           
             //BuscarJugador(3);
             //EliminarJugador(3);
-            MostrarJugador();
+           // MostrarJugador();
             // UpdateJugador(); 
             //AsignarEquipoJugador();
             //AsignarPosicionJugador();
@@ -76,7 +76,7 @@ namespace TorneoFutbolDptl.App.Consola
             //UpdateNovedad(); 
             //AsignarJugador();
 //----------------------------------------------------
-            //AddPartido();           
+           //AddPartido();           
             //BuscarPartido(2);
             //EliminarPartido(3);
             //MostrarPartido();
