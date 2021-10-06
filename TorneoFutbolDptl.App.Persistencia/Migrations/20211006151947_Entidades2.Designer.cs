@@ -10,8 +10,8 @@ using TorneoFutbolDptl.App.Persistencia;
 namespace TorneoFutbolDptl.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211004165259_Entidades")]
-    partial class Entidades
+    [Migration("20211006151947_Entidades2")]
+    partial class Entidades2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
