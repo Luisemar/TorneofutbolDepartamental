@@ -41,6 +41,9 @@ namespace TorneoFutbolDptl.App.Persistencia
             if (jugadorEncontrado !=null)
             {
                 jugadorEncontrado.Nombre=jugador.Nombre;
+                jugadorEncontrado.Numero=jugador.Numero;
+                jugadorEncontrado.Posicion=jugador.Posicion;
+                jugadorEncontrado.Equipo=jugador.Equipo;
                 _appContext.SaveChanges();
             }
             return jugadorEncontrado; 
