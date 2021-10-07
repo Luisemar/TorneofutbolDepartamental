@@ -427,11 +427,11 @@ namespace TorneoFutbolDptl.App.Consola
             var novedad = new Novedad
             {
                 TarjetaAmarilla = 0,
-                //FechaHoraTA = Null,
+               // FechaHoraTA =,
                 TarjetaRoja = 0,
                 //FechaHoraTR = Null,
                 GolEquipoLocal = 0,
-                //FechaGEl = Nul,
+                //FechaGEl = Null,
                 GolEquipoVisita = 0,
                //FechaGEV = Null,
                 EquipoLocalMarca = 0,
