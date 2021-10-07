@@ -41,6 +41,16 @@ namespace TorneoFutbolDptl.App.Persistencia
             if (partidoEncontrado !=null)
             {
                 partidoEncontrado.Id=partido.Id;
+                partidoEncontrado.EquipoLocal=partido.EquipoLocal;
+                partidoEncontrado.EquipoVisita=partido.EquipoVisita;
+                partidoEncontrado.EquipoLocalMarca=partido.EquipoLocalMarca;
+                partidoEncontrado.EquipoVisitaMarca=partido.EquipoVisitaMarca;
+                partidoEncontrado.FechaHora=partido.FechaHora;
+                partidoEncontrado.Arbitro=partido.Arbitro;
+                partidoEncontrado.Estadio=partido.Estadio;
+                partidoEncontrado.Novedad=partido.Novedad;
+
+
                 _appContext.SaveChanges();
             }
             return partidoEncontrado; 
