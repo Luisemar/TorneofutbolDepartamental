@@ -570,6 +570,9 @@ namespace TorneoFutbolDptl.App.Consola
             Console.WriteLine(partido.EquipoLocalMarca);
             Console.WriteLine(partido.EquipoVisitaMarca);
             Console.WriteLine(partido.FechaHora);
+            Console.WriteLine(partido.Arbitro);
+            Console.WriteLine(partido.Estadio);
+            Console.WriteLine(partido.Novedades);
 
             // partido.EquipoLocal = 3;
             //partido.EquipoVisita = "Nacionalll"; 
