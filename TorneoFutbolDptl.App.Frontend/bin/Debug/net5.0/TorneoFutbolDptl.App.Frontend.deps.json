@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "TorneoFutbolDptl.App.Frontend/1.0.0": {
         "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0",
           "TorneoFutbolDptl.App.Dominio": "1.0.0",
           "TorneoFutbolDptl.App.Persistencia": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -1270,6 +1271,9 @@
         }
       },
       "TorneoFutbolDptl.App.Dominio/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "runtime": {
           "TorneoFutbolDptl.App.Dominio.dll": {}
         },

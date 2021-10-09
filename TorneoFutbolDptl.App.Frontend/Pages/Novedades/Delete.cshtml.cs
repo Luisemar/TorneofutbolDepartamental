@@ -9,30 +9,32 @@ using TorneoFutbolDptl.App.Persistencia;
 
 namespace TorneoFutbolDptl.App.Frontend.Pages.Novedades
 {
-    public class CreateModel : PageModel
+    public class DeleteModel : PageModel
     {
         private readonly IRepositorioNovedad _repoNovedad;
         public Novedad novedad {get; set;}
-        public CreateModel(IRepositorioNovedad repoNovedad)
+        public DeleteModel(IRepositorioNovedad repoNovedad)
         {
             _repoNovedad = repoNovedad;
         }
-        public void OnGet()
-        {
-            novedad = new Novedad();
-        }
 
-        public IActionResult OnPost(Novedad novedad)
+        public IActionResult OnGet(int id)
         {
-            if (ModelState.IsValid)
+            novedad = _repoNovedad.GetNovedad(id);
+            if(novedad == null)
             {
-                _repoNovedad.AddNovedad(novedad);
-                return RedirectToPage("Index");
+                return NotFound();
             }
             else
             {
                 return Page();
             }
+        }
+
+        public IActionResult OnPost(Novedad novedad)
+        {
+            _repoNovedad.DeleteNovedad(novedad.Id);
+            return RedirectToPage("Index");
         }
     }
 }
