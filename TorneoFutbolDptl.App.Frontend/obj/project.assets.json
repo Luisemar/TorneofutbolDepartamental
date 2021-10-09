@@ -1485,6 +1485,9 @@
       "TorneoFutbolDptl.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/TorneoFutbolDptl.App.Dominio.dll": {}
         },
@@ -5732,6 +5735,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "System.ComponentModel.Annotations >= 5.0.0",
       "TorneoFutbolDptl.App.Dominio >= 1.0.0",
       "TorneoFutbolDptl.App.Persistencia >= 1.0.0"
     ]
@@ -5781,6 +5785,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
