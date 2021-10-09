@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using TorneoFutbolDptl.App.Dominio;
@@ -17,14 +17,16 @@ namespace TorneoFutbolDptl.App.Consola
         private static IRepositorioArbitro _repoArbitro = new RepositorioArbitro();
         private static IRepositorioNovedad _repoNovedad = new RepositorioNovedad();
         private static IRepositorioPartido _repoPartido = new RepositorioPartido();
+        private static IRepositorioDesempenoEquipo _repoDesempenoEquipo = new RepositorioDesempenoEquipo();          
         static void Main(string[] args)
+
         {
             Console.WriteLine("Hello World!");
             //AddMunicipio();
             //BuscarMunicipio(1);
             //EliminarMunicipio(3);
-            MostrarMunicipios();
-           // UpdateMunicipio(); 
+            //MostrarMunicipios();
+            // UpdateMunicipio(); 
 //------------------------------------------------
             //AddPosicion();           
             //BuscarPosicion(3);
@@ -56,7 +58,7 @@ namespace TorneoFutbolDptl.App.Consola
             //AddJugador();           
             //BuscarJugador(3);
             //EliminarJugador(3);
-            //MostrarJugador();
+           // MostrarJugador();
             // UpdateJugador(); 
             //AsignarEquipoJugador();
             //AsignarPosicionJugador();
@@ -74,7 +76,7 @@ namespace TorneoFutbolDptl.App.Consola
             //UpdateNovedad(); 
             //AsignarJugador();
 //----------------------------------------------------
-            //AddPartido();           
+           //AddPartido();           
             //BuscarPartido(2);
             //EliminarPartido(3);
             //MostrarPartido();
@@ -83,12 +85,19 @@ namespace TorneoFutbolDptl.App.Consola
             //AsignarEstadioPartido();
             //AsignarNovedadPartido();
 //----------------------------------------------------
+            //AddDesempenoEquipo();           
+            //BuscarDesempenoEquipo(1);
+            //EliminarDesempenoEquipo(3);
+            //MostrarDesempenoEquipo();
+            //UpdateDesempenoEquipo(); 
+            //AsignarEquipo();
+//----------------------------------------------------
         }
         private static void AddMunicipio()
         {
             var municipio = new Municipio
             {
-                Nombre = "Pacora",
+                Nombre = "Neira",
             };
             _repoMunicipio.AddMunicipio(municipio);
         }
@@ -194,16 +203,16 @@ namespace TorneoFutbolDptl.App.Consola
 
         private static void AsignarMunicipio()
         {
-            var municipio = _repoEstadio.AsignarMunicipio(2,4);
+            var municipio = _repoEstadio.AsignarMunicipio(1,3);
             Console.WriteLine(municipio.Nombre);
         }
 
          private  static void UpdateEstadio()
          {
-            var estadio = _repoEstadio.GetEstadio(2);
+            var estadio = _repoEstadio.GetEstadio(3);
             Console.WriteLine(estadio.Nombre);
-             estadio.Nombre = "PaloPequeño";
-             estadio.Direccion = "Calle Arriba";
+             estadio.Nombre = "PaloMediano";
+             estadio.Direccion = "En el alto";
             Console.WriteLine(estadio.Nombre);             
              _repoEstadio.UpdateEstadio(estadio);
          }
@@ -331,10 +340,13 @@ namespace TorneoFutbolDptl.App.Consola
 
         private static void MostrarJugador()
         {
-            IEnumerable<Jugador> jugadors = _repoJugador.GetAllJugadors();
-            foreach (var jugador in jugadors)
+            IEnumerable<Jugador> jugadores = _repoJugador.GetAllJugadores();
+            foreach (var jugador in jugadores)
             {
                 Console.WriteLine(jugador.Nombre);
+                Console.WriteLine(jugador.Numero);
+                Console.WriteLine(jugador.Equipo);
+                Console.WriteLine(jugador.Posicion);
             }
         }
 
@@ -415,11 +427,11 @@ namespace TorneoFutbolDptl.App.Consola
             var novedad = new Novedad
             {
                 TarjetaAmarilla = 0,
-                //FechaHoraTA = Null,
+               // FechaHoraTA =,
                 TarjetaRoja = 0,
                 //FechaHoraTR = Null,
                 GolEquipoLocal = 0,
-                //FechaGEl = Nul,
+                //FechaGEl = Null,
                 GolEquipoVisita = 0,
                //FechaGEV = Null,
                 EquipoLocalMarca = 0,
@@ -558,6 +570,9 @@ namespace TorneoFutbolDptl.App.Consola
             Console.WriteLine(partido.EquipoLocalMarca);
             Console.WriteLine(partido.EquipoVisitaMarca);
             Console.WriteLine(partido.FechaHora);
+            Console.WriteLine(partido.Arbitro);
+            Console.WriteLine(partido.Estadio);
+            Console.WriteLine(partido.Novedades);
 
             // partido.EquipoLocal = 3;
             //partido.EquipoVisita = "Nacionalll"; 
@@ -574,5 +589,76 @@ namespace TorneoFutbolDptl.App.Consola
             _repoPartido.UpdatePartido(partido);
 
         }
+//-------------------------------------------------------------------------------         
+       private static void AddDesempenoEquipo()
+        {
+            var desempenoEquipo = new DesempenoEquipo
+            {
+                PartidosJugados = 0,
+                PartidosGanados = 0,
+                PartidosPerdidos = 0,
+                PartidosEmpatados = 0,
+                GolesAFavor = 0,
+                GolesEnContra = 0,
+                PuntosAcumulados = 0,                
+            };
+            _repoDesempenoEquipo.AddDesempenoEquipo(desempenoEquipo);
+        }
+        private static void BuscarDesempenoEquipo(int idDesempenoEquipo)
+        {
+            var desempenoEquipo =  _repoDesempenoEquipo.GetDesempenoEquipo(idDesempenoEquipo);
+            Console.WriteLine(desempenoEquipo.Id);
+        }          
+
+        private static void EliminarDesempenoEquipo(int idDesempenoEquipo)
+        {
+            _repoDesempenoEquipo.DeleteDesempenoEquipo(idDesempenoEquipo);
+            Console.WriteLine("DesempenoEquipo Eliminado");
+        }
+
+        private static void MostrarDesempenoEquipo()
+        {
+            IEnumerable<DesempenoEquipo> desempenoEquipos = _repoDesempenoEquipo.GetAllDesempenoEquipo();
+            foreach (var desempenoEquipo in desempenoEquipos)
+            {
+                Console.WriteLine(desempenoEquipo.Id);
+            }
+        }
+
+        private static void AsignarEquipo()
+        {
+            var Equipo = _repoDesempenoEquipo.AsignarEquipo(1,1);
+            Console.WriteLine(Equipo.Nombre);
+        }
+
+
+        private  static void UpdateDesempenoEquipo()
+         {
+            var desempenoEquipo = _repoDesempenoEquipo.GetDesempenoEquipo(1);
+            Console.WriteLine(desempenoEquipo.PartidosJugados);
+            Console.WriteLine(desempenoEquipo.PartidosGanados);
+            Console.WriteLine(desempenoEquipo.PartidosPerdidos);
+            Console.WriteLine(desempenoEquipo.PartidosEmpatados);
+            Console.WriteLine(desempenoEquipo.GolesAFavor);
+            Console.WriteLine(desempenoEquipo.GolesEnContra);
+            Console.WriteLine(desempenoEquipo.PuntosAcumulados);
+
+            //desempenoEquipo.PartidosJugados = 1;
+            //desempenoEquipo.PartidosGanados = 1;
+            //desempenoEquipo.PartidosPerdidos = 1;
+            //desempenoEquipo.PartidosEmpatados = 1;
+            //desempenoEquipo..GolesAFavor = 1;
+            //desempenoEquipo..GolesEnContra = 1;            
+            //desempenoEquipo.PuntosAcumulados = 1;
+
+            Console.WriteLine(desempenoEquipo.PartidosJugados);
+            Console.WriteLine(desempenoEquipo.PartidosGanados);
+            Console.WriteLine(desempenoEquipo.PartidosPerdidos);
+            Console.WriteLine(desempenoEquipo.PartidosEmpatados);
+            Console.WriteLine(desempenoEquipo.GolesAFavor);
+            Console.WriteLine(desempenoEquipo.GolesEnContra);
+            Console.WriteLine(desempenoEquipo.PuntosAcumulados);
+            _repoDesempenoEquipo.UpdateDesempenoEquipo(desempenoEquipo);
+         }        
     }            
 }
