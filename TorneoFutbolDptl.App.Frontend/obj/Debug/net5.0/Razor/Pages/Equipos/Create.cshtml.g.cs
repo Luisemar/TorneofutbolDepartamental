@@ -261,9 +261,9 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<TorneoFutbolDptl.App.Frontend.Pages.Equiposs.CreateModel> Html { get; private set; }
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<TorneoFutbolDptl.App.Frontend.Pages.Equiposs.CreateModel> ViewData => (global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<TorneoFutbolDptl.App.Frontend.Pages.Equiposs.CreateModel>)PageContext?.ViewData;
-        public TorneoFutbolDptl.App.Frontend.Pages.Equiposs.CreateModel Model => ViewData.Model;
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<TorneoFutbolDptl.App.Frontend.Pages.Equipos.CreateModel> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<TorneoFutbolDptl.App.Frontend.Pages.Equipos.CreateModel> ViewData => (global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<TorneoFutbolDptl.App.Frontend.Pages.Equipos.CreateModel>)PageContext?.ViewData;
+        public TorneoFutbolDptl.App.Frontend.Pages.Equipos.CreateModel Model => ViewData.Model;
     }
 }
 #pragma warning restore 1591
