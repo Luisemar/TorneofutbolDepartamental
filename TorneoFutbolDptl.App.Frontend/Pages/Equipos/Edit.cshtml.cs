@@ -13,14 +13,14 @@ namespace TorneoFutbolDptl.App.Frontend.Pages.Equipos
     {
         private readonly IRepositorioEquipo _repoEquipo;
         public Equipo equipo {get; set;}
-        public EditModel(IRepositorioJugador repoJugador)
+        public EditModel(IRepositorioEquipo repoEquipo)
         {
             _repoEquipo = repoEquipo;
         }
 
         public IActionResult OnGet(int id)
         {
-            Equipo = _repoEquipo.GetEquipo(id);
+            equipo = _repoEquipo.GetEquipo(id);
             if(equipo == null)
             {
                 return NotFound();
@@ -33,7 +33,7 @@ namespace TorneoFutbolDptl.App.Frontend.Pages.Equipos
 
         public IActionResult OnPost(Equipo equipo)
         {
-            _repoEquipo.UpdatEquipo(equipo);
+            _repoEquipo.UpdateEquipo(equipo);
             return RedirectToPage("Index");
         }
     }
