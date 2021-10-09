@@ -9,21 +9,19 @@ using TorneoFutbolDptl.App.Persistencia;
 
 namespace TorneoFutbolDptl.App.Frontend.Pages.Equipos
 {
-    public class DetailsModel : PageModel
-
+    public class DeleteModel : PageModel
     {
         private readonly IRepositorioEquipo _repoEquipo;
-        public Equipo equipo {get; set;}        
-
-         public DetailsModel (IRepositorioEquipo repoEquipo)
+        public Equipo equipo {get; set;}
+        public DeleteModel(IRepositorioEquipo repoEquipo)
         {
-        _repoEquipo= repoEquipo;
-
+            _repoEquipo = repoEquipo;
         }
+
         public IActionResult OnGet(int id)
         {
             equipo = _repoEquipo.GetEquipo(id);
-            if (equipo == null)
+            if(equipo == null)
             {
                 return NotFound();
             }
@@ -32,6 +30,11 @@ namespace TorneoFutbolDptl.App.Frontend.Pages.Equipos
                 return Page();
             }
         }
-    }
 
-}    
+        public IActionResult OnPost(Equipo equipo)
+        {
+            _repoEquipo.DeleteEquipo(equipo.Id);
+            return RedirectToPage("Index");
+        }
+    }
+}
