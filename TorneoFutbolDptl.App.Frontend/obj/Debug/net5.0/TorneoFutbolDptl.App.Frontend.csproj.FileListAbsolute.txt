@@ -148,3 +148,4 @@ C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Deb
 C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\ref\TorneoFutbolDptl.App.Frontend.dll
 C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\TorneoFutbolDptl.App.Frontend.pdb
 C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\TorneoFutbolDptl.App.Frontend.genruntimeconfig.cache
+C:\Torneo_MicTic\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\List.cshtml.g.cs

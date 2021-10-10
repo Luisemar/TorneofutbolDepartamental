@@ -1,0 +1,15 @@
+﻿@page
+@model TorneoFutbolDptl.App.Frontend.ListModel
+@{
+}
+<h1>Lista de Arbitros</h1>
+<table class="table">
+    @foreach (var Arbitros in Model.ListaArbitros)
+    {
+        <tr>
+            <td>@Arbitros</td>
+        </tr>
+    }
+
+    
+</table>
