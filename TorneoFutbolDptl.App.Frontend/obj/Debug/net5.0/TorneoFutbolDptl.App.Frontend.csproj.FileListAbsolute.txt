@@ -73,6 +73,7 @@ C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Frontend\bin\Debug\net
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Frontend\bin\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.dll
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Frontend\bin\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.pdb
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Frontend\bin\Debug\net5.0\TorneoFutbolDptl.App.Dominio.pdb
+<<<<<<< HEAD
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Index.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Details.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Create.cshtml.g.cs
@@ -85,7 +86,6 @@ C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Create.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Details.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Edit.cshtml.g.cs
-<<<<<<< HEAD
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Delete.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Delete.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Delete.cshtml.g.cs
@@ -103,3 +103,9 @@ C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEquipoVisita.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEquipoVisitaMarca.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEstadio.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Create.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Details.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Edit.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Index.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Delete.cshtml.g.cs
+>>>>>>> Equipos_Andres
