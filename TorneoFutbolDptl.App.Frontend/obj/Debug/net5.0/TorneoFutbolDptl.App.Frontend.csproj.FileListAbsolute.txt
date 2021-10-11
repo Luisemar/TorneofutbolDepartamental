@@ -86,7 +86,6 @@ C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Create.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Details.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Edit.cshtml.g.cs
-<<<<<<< HEAD
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Delete.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Novedades\Delete.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Delete.cshtml.g.cs
@@ -104,7 +103,6 @@ C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEquipoVisita.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEquipoVisitaMarca.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEstadio.cshtml.g.cs
-=======
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Create.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Details.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Edit.cshtml.g.cs
