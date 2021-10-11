@@ -97,3 +97,9 @@ C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net
 >>>>>>> Aleja
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\AddEquipo.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\AddPosicion.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEquipoLocal.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddArbitro.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEquipoLocalMarca.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEquipoVisita.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEquipoVisitaMarca.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\AddEstadio.cshtml.g.cs
