@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbolDptl.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace TorneoFutbolDptl.App.Persistencia
 {
@@ -15,10 +16,14 @@ namespace TorneoFutbolDptl.App.Persistencia
             return PartidoAdicionado.Entity;
 
         }
-       
+        
         Partido IRepositorioPartido.GetPartido(int idPartido)
         {
-            return _appContext.Partidos.Find(idPartido);
+            var partido = _appContext.Partidos
+                .Where(p => p.Id == idPartido)
+                .Include(p => p.Arbitro)
+                .FirstOrDefault();
+        return partido;
         }
 
         void IRepositorioPartido.DeletePartido(int idPartido)
