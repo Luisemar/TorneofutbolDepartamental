@@ -8,6 +8,6 @@ namespace TorneoFutbolDptl.App.Dominio
         public string Nombre {get; set;}
         public string Documento {get; set;}
         public string NumeroTelefono {get; set;}
-        
+         
     }
 }
