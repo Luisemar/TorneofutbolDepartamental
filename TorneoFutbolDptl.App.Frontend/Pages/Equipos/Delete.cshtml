@@ -1,0 +1,21 @@
+@page
+@using TorneoFutbolDptl.App.Dominio
+@model TorneoFutbolDptl.App.Frontend.Pages.Equipos.DeleteModel
+@{
+}
+<h1>Eliminar Equipo</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="equipo.Id"></label>
+        <input asp-for="equipo.Id" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="equipo.Nombre"></label>
+        <input asp-for="equipo.Nombre" class="form-control" readonly>
+        <span asp-validation-for="equipo.Nombre" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Eliminar</button>
+</form>
+<br>
+<a class="btn btn-secondary" asp-page="./Index">Cancelar</a>

@@ -5836,7 +5836,11 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\maham\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
+>>>>>>> Equipos_Andres
   },
   "project": {
     "version": "1.0.0",
@@ -5844,11 +5848,19 @@
       "projectUniqueName": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Consola\\TorneoFutbolDptl.App.Consola.csproj",
       "projectName": "TorneoFutbolDptl.App.Consola",
       "projectPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Consola\\TorneoFutbolDptl.App.Consola.csproj",
+<<<<<<< HEAD
       "packagesPath": "C:\\Users\\maham\\.nuget\\packages\\",
       "outputPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\maham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.App.Consola\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Equipos_Andres
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
