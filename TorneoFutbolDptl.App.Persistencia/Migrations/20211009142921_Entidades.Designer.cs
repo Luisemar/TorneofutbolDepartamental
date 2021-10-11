@@ -10,11 +10,7 @@ using TorneoFutbolDptl.App.Persistencia;
 namespace TorneoFutbolDptl.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-<<<<<<< HEAD:TorneoFutbolDptl.App.Persistencia/Migrations/20211003155740_Entidades.Designer.cs
     [Migration("20211003155740_Entidades")]
-=======
-    [Migration("20211009142921_Entidades")]
->>>>>>> Equipos_Andres:TorneoFutbolDptl.App.Persistencia/Migrations/20211009142921_Entidades.Designer.cs
     partial class Entidades
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
