@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System;
 using System.ComponentModel.DataAnnotations;
 namespace TorneoFutbolDptl.App.Dominio
@@ -8,8 +9,12 @@ namespace TorneoFutbolDptl.App.Dominio
         public int Id { get; set; }
 
 
-        [Display(Name = "Equipo local")]
+        [Required(ErrorMessage = "Debe agregar el nombre completo del jugador")]
+        [StringLength(60, ErrorMessage = "Máximo 60 caracteres")]
+        [MinLength(8, ErrorMessage = "Mínimo 8 caracteres")]
+        [Display(Name = "Nombre")]
         public string Nombre {get;set;}
+        [StringLength(2, ErrorMessage = "Máximo 2 cifras")]
         [Display(Name = "Número del jugador")]
         public string Numero {get;set;}
         // Relacion entre el Jugador y equipo FK

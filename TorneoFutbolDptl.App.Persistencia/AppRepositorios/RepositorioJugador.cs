@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using TorneoFutbolDptl.App.Dominio;
 
@@ -18,7 +19,12 @@ namespace TorneoFutbolDptl.App.Persistencia
        
         Jugador IRepositorioJugador.GetJugador(int idJugador)
         {
-            return _appContext.Jugadores.Find(idJugador);
+            var jugador = _appContext.Jugadores
+                .Where(p => p.Id == idJugador)
+                .Include(p => p.Equipo)
+                .Include(p => p.Posicion)
+                .FirstOrDefault();
+        return jugador;
         }
 
         void IRepositorioJugador.DeleteJugador(int idJugador)

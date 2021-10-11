@@ -16,9 +16,9 @@ namespace TorneoFutbolDptl.App.Persistencia
 
         }
        
-        Posicion IRepositorioPosicion.GetPosicion(int idPosicion)
+        Posicion IRepositorioPosicion.GetPosicion(int IdPosicion)
         {
-            return _appContext.Posiciones.Find(idPosicion);
+            return _appContext.Posiciones.Find(IdPosicion);
         }
 
         void IRepositorioPosicion.DeletePosicion(int idPosicion)
