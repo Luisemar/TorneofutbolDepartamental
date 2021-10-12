@@ -9,18 +9,16 @@ using TorneoFutbolDptl.App.Persistencia;
 
 namespace TorneoFutbolDptl.App.Frontend.Pages.Estadios
 {
-    public class DetailsModel : PageModel
-
+    public class EditModel : PageModel
     {
         private readonly IRepositorioEstadio _repoEstadio;
-        public Estadio estadio {get; set;}        
-
-         public DetailsModel (IRepositorioEstadio repoEstadio)
+        public Estadio estadio {get; set;}
+        public EditModel(IRepositorioEstadio repoEstadio)
         {
-        _repoEstadio= repoEstadio;
-
+            _repoEstadio = repoEstadio;
         }
-        public IActionResult OnGet(int id)
+
+       public IActionResult OnGet(int id)
         {
             estadio = _repoEstadio.GetEstadio(id);
             if (estadio == null)
@@ -32,6 +30,11 @@ namespace TorneoFutbolDptl.App.Frontend.Pages.Estadios
                 return Page();
             }
         }
-    }
 
-}    
+        public IActionResult OnPost(Estadio estadio)
+        {
+            _repoEstadio.UpdateEstadio(estadio);
+            return RedirectToPage("Index");
+        }      
+    }
+}

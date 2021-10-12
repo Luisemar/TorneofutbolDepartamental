@@ -1,0 +1,22 @@
+﻿@page
+@model TorneoFutbolDptl.App.Frontend.Pages.Estadios.AddMunicipioModel
+@{
+}
+<h1>Asignar municipio</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="idEstadio">Estadio</label>
+        <input type="text" id="idEstadio" name="idEstadio" class="form-control" value="@Model.estadio.Id" readonly>
+    </div>
+    <div class="form-group">
+        <label for="idMunicipio">Municipio</label>
+        <select id="idMunicipio" name="idMunicipio" class="form-control">
+            @foreach (var municipio in Model.municipios)
+            {
+                <option value="@municipio.Id">@municipio.Nombre</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Asignar municipio</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

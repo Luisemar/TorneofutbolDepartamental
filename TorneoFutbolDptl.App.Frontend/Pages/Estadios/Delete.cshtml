@@ -1,0 +1,18 @@
+﻿@page
+@model TorneoFutbolDptl.App.Frontend.Pages.Estadios.DeleteModel
+@{
+}
+<h1>Eliminar estadio</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="estadio.Id"></label>
+        <input asp-for="estadio.Id" class="form-control" readonly>
+    </div>    
+    <div class="form-group">
+        <label asp-for="estadio.Nombre"></label>
+        <input asp-for="estadio.Nombre" class="form-control" placeholder="Correccion">
+        <span class="text-danger" asp-validation-for="estadio.Nombre"></span>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Eliminar estadio</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

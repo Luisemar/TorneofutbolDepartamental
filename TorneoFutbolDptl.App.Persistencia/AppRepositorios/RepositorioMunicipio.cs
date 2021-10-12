@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbolDptl.App.Dominio;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace TorneoFutbolDptl.App.Persistencia
 {
