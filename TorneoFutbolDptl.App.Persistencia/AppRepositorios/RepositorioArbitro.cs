@@ -39,8 +39,11 @@ namespace TorneoFutbolDptl.App.Persistencia
         {
             var arbitroEncontrado= _appContext.Arbitros.FirstOrDefault(p => p.Id==arbitro.Id);
             if (arbitroEncontrado !=null)
-            {
+            { 
                 arbitroEncontrado.Nombre=arbitro.Nombre;
+                arbitroEncontrado.Documento=arbitro.Documento;
+                arbitroEncontrado.Telefono=arbitro.Telefono;
+                arbitroEncontrado.Colegio=arbitro.Colegio;
                 _appContext.SaveChanges();
             }
             return arbitroEncontrado; 
