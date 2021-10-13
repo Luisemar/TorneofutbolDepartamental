@@ -37,6 +37,18 @@ namespace TorneoFutbolDptl.App.Persistencia
         return partido;                
         }
 
+        public Partido UpdatePartidoELM(Partido partido)
+        {
+            var partidoEncontrado= _appContext.Partidos.FirstOrDefault(p => p.Id==partido.Id);
+            if (partidoEncontrado !=null)
+            {
+                partidoEncontrado.Id=partido.Id;                
+                partidoEncontrado.EquipoLocalMarca=partido.EquipoLocalMarca;                              
+                _appContext.SaveChanges();
+            }
+            return partidoEncontrado; 
+        }          
+
 
         void IRepositorioPartido.DeletePartido(int idPartido)
         {
@@ -100,10 +112,6 @@ namespace TorneoFutbolDptl.App.Persistencia
           }
         return null;
         }
-
-
-
-
 
         // Código ya implementado
        Estadio IRepositorioPartido.AsignarEstadioPartido(int idPartido, int idEstadio)

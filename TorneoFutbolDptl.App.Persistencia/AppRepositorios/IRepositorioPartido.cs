@@ -7,7 +7,8 @@ namespace TorneoFutbolDptl.App.Persistencia
     {
         Partido AddPartido(Partido partido);
         Partido GetPartido(int idPartido);
-        Partido GetPartidoEl(int idPartido);    
+        Partido GetPartidoEl(int idPartido);
+        Partido UpdatePartidoELM(Partido partido);    
         void DeletePartido(int idPartido);
         IEnumerable<Partido> GetAllPartidos();
         Partido UpdatePartido(Partido partido);
@@ -15,7 +16,6 @@ namespace TorneoFutbolDptl.App.Persistencia
         Estadio  AsignarEstadioPartido(int idPartido, int idEstadio);
         Novedad  AsignarNovedadPartido(int idPartido, int idNovedad);
         Equipo  AsignarEquipoELPartido(int idPartido, int idEquipo);  
-
-               
+       
     }
 }
