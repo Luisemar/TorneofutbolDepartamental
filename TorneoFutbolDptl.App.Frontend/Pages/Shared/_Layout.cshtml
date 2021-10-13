@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Torneo de Fútbol Departal</title>
+    <title>@ViewData["Title"] - Inicio</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
 </head>
 <body>
     <header>
@@ -18,46 +19,48 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Inicio</a>
-                        </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacidad</a>
                         </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Municipios/Index">Municipios </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Estadios/Index">Estadios </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Jugadores/Index">Jugadores </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Equipos/Index">Equipos </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Arbitros/Index">Árbitros </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/DT/Index">Director Técnico </a>
-                        </li>                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Partidos/Index">Partidos </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Novedades/Index">Novedades </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Desempeño/Index">Desempeño </a>
-                        </li>                                                                                                                                               
+                
+                        
                     </ul>
-                    
-
                 </div>
             </div>
         </nav>
+        <div class="btn-menu">
+			<label for="btn-menu">⚽</label>
+		</div>
+
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    
+                   
+                            <a id = "contmenumunicipios" asp-area="" asp-page="/Municipios/Index">🌇   Municipios </a>                        
+                        
+                            <a id = "contmenuestadios" asp-area="" asp-page="/Estadios/Index">🏟   Estadios </a>                        
+                        
+                            <a id = "contmenujugadores" asp-area="" asp-page="/Jugadores/Index">⛹    Jugadores </a>                       
+                        
+                            <a id = "contmenuequipos" asp-area="" asp-page="/Equipos/Index">⛹⛹⛹Equipos </a>                        
+                        
+                            <a id = "contmenuarbitros" asp-area="" asp-page="/Arbitros/Index">🙅    Árbitros </a>                        
+                        
+                            <a id = "contmenudt" asp-area="" asp-page="/DT/Index">🕺    Director Técnico </a>                                               
+                        
+                            <a id = "contmenupartidos" asp-area="" asp-page="/Partidos/Index">⚽⛹  Partidos </a>                        
+                        
+                            <a id = "contmenunovedades" asp-area="" asp-page="/Novedades/Index">🥅    Novedades </a>                        
+                        
+                            <a id = "contmenudesempeno" asp-area="" asp-page="/Desempeño/Index">📊 Desempeño </a>
+                  
+                </nav>
+                <label id = "xmenu" for="btn-menu">⛒</label>
+            </div>
+        </div>    
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -67,7 +70,8 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - TorneoFutbolDptl.App.Frontend - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2021 - &lt;IDEAL 2022&gt; Universidad de Caldas - <a asp-area="" asp-page="/Privacy">Privacidad</a>
+        
         </div>
     </footer>
 
