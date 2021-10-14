@@ -37,6 +37,16 @@ namespace TorneoFutbolDptl.App.Persistencia
         return partido;                
         }
 
+
+        Partido IRepositorioPartido.GetPartidoEstadio(int idPartido)
+        {
+            var partido = _appContext.Partidos
+                .Where(p => p.Id == idPartido)
+                .Include(p => p.Estadio)
+                .FirstOrDefault();
+        return partido;                
+        }        
+
         public Partido UpdatePartidoELM(Partido partido)
         {
             var partidoEncontrado= _appContext.Partidos.FirstOrDefault(p => p.Id==partido.Id);

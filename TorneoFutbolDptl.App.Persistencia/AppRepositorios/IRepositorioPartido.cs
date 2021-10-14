@@ -8,6 +8,7 @@ namespace TorneoFutbolDptl.App.Persistencia
         Partido AddPartido(Partido partido);
         Partido GetPartido(int idPartido);
         Partido GetPartidoEl(int idPartido);
+        Partido GetPartidoEstadio(int idPartido);
         Partido UpdatePartidoELM(Partido partido);    
         void DeletePartido(int idPartido);
         IEnumerable<Partido> GetAllPartidos();
@@ -15,7 +16,7 @@ namespace TorneoFutbolDptl.App.Persistencia
         Arbitro  AsignarArbitroPartido(int idPartido, int idArbitro);
         Estadio  AsignarEstadioPartido(int idPartido, int idEstadio);
         Novedad  AsignarNovedadPartido(int idPartido, int idNovedad);
-        Equipo  AsignarEquipoELPartido(int idPartido, int idEquipo);  
+        Equipo  AsignarEquipoELPartido(int idPartido, int idEquipo);        
        
     }
 }
