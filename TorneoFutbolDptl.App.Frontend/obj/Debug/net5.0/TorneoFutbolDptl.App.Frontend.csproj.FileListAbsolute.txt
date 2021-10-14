@@ -121,3 +121,4 @@ C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Details.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Edit.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Index.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\DesempenoEquipos\Index.cshtml.g.cs
