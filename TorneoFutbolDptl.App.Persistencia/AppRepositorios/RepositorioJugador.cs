@@ -57,10 +57,10 @@ namespace TorneoFutbolDptl.App.Persistencia
 
         // Código ya implementado
         Equipo IRepositorioJugador.AsignarEquipoJugador(int idJugador, int idEquipo)
-        { var jugadorEncontrado = _appContext.Jugadores.FirstOrDefault(p => p.Id == idJugador); 
+        { var jugadorEncontrado = _appContext.Jugadores.Find(idJugador); 
         if ( jugadorEncontrado != null)
             { 
-                var equipoEncontrado = _appContext.Equipos.FirstOrDefault(m => m.Id == idEquipo);
+                var equipoEncontrado = _appContext.Equipos.Find(idEquipo);
                 if ( equipoEncontrado != null)
                {
                     jugadorEncontrado.Equipo = equipoEncontrado;
@@ -85,6 +85,15 @@ namespace TorneoFutbolDptl.App.Persistencia
                 return  posicionEncontrado;
             }
         return null;
-        }     
+        }  
+
+        IEnumerable<Jugador> IRepositorioJugador.SearchJugadores(string nombre)
+        {
+            return _appContext.Jugadores
+                .Where(p => p.Nombre.Contains(nombre));
+        }
+
+        
+
     }
 }

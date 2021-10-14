@@ -8,4 +8,17 @@ namespace TorneoFutbolDptl.App.Dominio
         public string Nombre {get;set;}
         
     }
+    public enum Puesto
+    {
+        Arquero,
+        Defensa,
+        Centrocampista,
+        Mediocampista,
+        Volante,
+        Mediapunta,
+        Delantero,
+        Puntero
+
+
+    }
 }

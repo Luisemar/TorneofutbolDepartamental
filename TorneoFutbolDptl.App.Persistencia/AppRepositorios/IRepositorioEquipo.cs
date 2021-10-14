@@ -13,5 +13,6 @@ namespace TorneoFutbolDptl.App.Persistencia
         Equipo UpdateEquipo(Equipo equipo);
         Municipio  AsignarMunicipioEquipo(int idEquipo, int idMunicipio);
         DirectorTecnico  AsignarDirectorTecnico(int idEquipo, int idDirectorTecnico); 
+        IEnumerable<Equipo> SearchEquipos(string nombre); 
     }
 }

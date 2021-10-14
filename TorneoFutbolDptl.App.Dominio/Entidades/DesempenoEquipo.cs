@@ -1,3 +1,5 @@
+using System;
+using System.ComponentModel.DataAnnotations;
 namespace TorneoFutbolDptl.App.Dominio
 {
     public class DesempenoEquipo
@@ -13,6 +15,7 @@ namespace TorneoFutbolDptl.App.Dominio
         public int PuntosAcumulados {get;set;}
         // Relacion entre el DesempenoEquipo y equipo FK
         public Equipo Equipo { get; set; }
+        
         
     }
 }

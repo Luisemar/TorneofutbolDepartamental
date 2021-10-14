@@ -1,0 +1,43 @@
+﻿@page
+@model TorneoFutbolDptl.App.Frontend.Pages.DesempenoEquipos.IndexModel
+@{
+}
+<h1>Tabla de Posiciones</h1>
+<a class="btn btn-primary" asp-page="./Create">Agregar Desempeño</a>
+<p></p>
+<table class="table">
+	<thead>
+		<tr>
+			<!--	<th scope="col">Id</th>       -->
+			<th scope="col">Equipo</th>
+			<th scope="col">PJ</th>
+			<th scope="col">PP</th>
+			<th scope="col">PE</th>
+			<th scope="col">GF</th>
+			<th scope="col">GC</th>
+			<th scope="col">Total Puntos</th>
+		</tr>
+	</thead>
+	</tbody>
+	@foreach (var desempenoEquipo in Model.desempenoEquipos)
+	{
+		<tr>
+			<!--	<td>@desempenoEquipo.Id</td>          -->
+			<td>@desempenoEquipo.Equipo.Nombre</td>
+			<td>@desempenoEquipo.PartidosJugados</td>
+			<td>@desempenoEquipo.PartidosGanados</td>
+			<td>@desempenoEquipo.PartidosPerdidos</td>
+			<td>@desempenoEquipo.PartidosEmpatados</td>
+			<td>@desempenoEquipo.GolesAFavor</td>>
+			<td>@desempenoEquipo.GolesEnContra</td>>
+			<td>@desempenoEquipo.PuntosAcumulados</td>>
+			<td>
+
+				<a class="btn btn-secondary" asp-page="./Details" asp-route-id="@desempenoEquipo.Id">Detalles</a>
+				<a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@desempenoEquipo.Id">Editar</a>
+				<a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@desempenoEquipo.Id">Eliminar</a>
+			</td>
+		</tr>
+	}
+	</tbody>
+</table>

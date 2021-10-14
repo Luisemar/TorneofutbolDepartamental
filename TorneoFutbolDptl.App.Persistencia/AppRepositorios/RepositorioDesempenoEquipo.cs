@@ -30,7 +30,7 @@ namespace TorneoFutbolDptl.App.Persistencia
             _appContext.SaveChanges();
         } 
         
-        IEnumerable<DesempenoEquipo> IRepositorioDesempenoEquipo.GetAllDesempenoEquipo()
+        IEnumerable<DesempenoEquipo> IRepositorioDesempenoEquipo.GetAllDesempenoEquipos()
         {
             return _appContext.DesempenoEquipos;
         }
@@ -48,11 +48,11 @@ namespace TorneoFutbolDptl.App.Persistencia
 
         // Código ya implementado
         Equipo IRepositorioDesempenoEquipo.AsignarEquipo(int idDesempenoEquipo, int idEquipo)
-        { var desempenoEquipoesEncontrado = _appContext.DesempenoEquipos.FirstOrDefault(p => p.Id == idDesempenoEquipo);
-        if ( desempenoEquipoesEncontrado != null)
+        { var desempenoEquiposEncontrado = _appContext.DesempenoEquipos.FirstOrDefault(p => p.Id == idDesempenoEquipo);
+        if ( desempenoEquiposEncontrado != null)
             { var equipoEncontrado = _appContext.Equipos.FirstOrDefault(m => m.Id == idEquipo);
         if ( equipoEncontrado != null)
-            { desempenoEquipoesEncontrado.Equipo = equipoEncontrado;
+            { desempenoEquiposEncontrado.Equipo = equipoEncontrado;
            _appContext.SaveChanges();
              }
           return equipoEncontrado;

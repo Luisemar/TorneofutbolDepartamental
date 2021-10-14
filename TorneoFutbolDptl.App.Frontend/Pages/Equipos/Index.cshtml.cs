@@ -12,16 +12,27 @@ namespace TorneoFutbolDptl.App.Frontend.Pages.Equipos
     public class IndexModel : PageModel
     {
         private readonly IRepositorioEquipo _repoEquipo;
-        public IEnumerable<Equipo> equipos {get; set;}
+        public IEnumerable<Equipo> equipos { get; set; }
+        public string bActual { get; set; }
         public IndexModel(IRepositorioEquipo repoEquipo)
         {
             _repoEquipo = repoEquipo;
-        }   
-        public void OnGet()
-        {
-            equipos = _repoEquipo.GetAllEquipos();
+        }
+        public void OnGet(string b)
 
-        }        
+        {
+            if (String.IsNullOrEmpty(b))
+            {
+                bActual = "";
+                equipos = _repoEquipo.GetAllEquipos();
+            }
+            else
+            {
+                bActual = b;
+                equipos = _repoEquipo.SearchEquipos(b);
+            }
+
+        }
     }
 }
 
