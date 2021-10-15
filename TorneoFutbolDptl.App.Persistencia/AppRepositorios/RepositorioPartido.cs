@@ -26,6 +26,26 @@ namespace TorneoFutbolDptl.App.Persistencia
         return partido;
         }
 
+        Partido IRepositorioPartido.GetPartidoEV(int idPartido)
+        {
+            var partido = _appContext.Partidos
+                .Where(p => p.Id == idPartido)
+                .Include(p => p.EquipoVisita)
+                .FirstOrDefault();
+        return partido;                
+        }
+
+        public Partido UpdatePartidoEVM(Partido partido)
+        {
+            var partidoEncontrado= _appContext.Partidos.FirstOrDefault(p => p.Id==partido.Id);
+            if (partidoEncontrado !=null)
+            {
+                partidoEncontrado.Id=partido.Id;                
+                partidoEncontrado.EquipoVisitaMarca=partido.EquipoVisitaMarca;                              
+                _appContext.SaveChanges();
+            }
+            return partidoEncontrado; 
+        }   
         void IRepositorioPartido.DeletePartido(int idPartido)
         {
             var partidoEncontrado = _appContext.Partidos.Find(idPartido);
@@ -100,6 +120,19 @@ namespace TorneoFutbolDptl.App.Persistencia
            _appContext.SaveChanges();
              }
           return novedadEncontrado;
+          }
+        return null;
+        }
+        Equipo IRepositorioPartido.AsignarEquipoPartido(int idPartido, int idEquipo)
+        { var partidoEncontrado = _appContext.Partidos.FirstOrDefault(p => p.Id == idPartido);
+        if ( partidoEncontrado != null)
+            { var equipoEncontrado = _appContext.Equipos.FirstOrDefault(m => m.Id == idEquipo);
+        if ( equipoEncontrado != null)
+        //Sale error porque Arbitro si es una entidad y EquipoVisita es un int
+            { partidoEncontrado.EquipoVisita = equipoEncontrado.Id;
+           _appContext.SaveChanges();
+            }
+          return equipoEncontrado;
           }
         return null;
         }

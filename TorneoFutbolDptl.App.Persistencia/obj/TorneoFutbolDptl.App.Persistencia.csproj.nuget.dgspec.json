@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
         "projectName": "TorneoFutbolDptl.App.Dominio",
         "projectPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\maham\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,11 +70,11 @@
         "projectUniqueName": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
         "projectName": "TorneoFutbolDptl.App.Persistencia",
         "projectPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\TorneoFutbolDptl.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\maham\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
         "outputPath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\maham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
