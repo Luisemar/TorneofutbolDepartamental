@@ -1,4 +1,19 @@
 ﻿@page
-@model MyApp.Namespace.AddEquipoVisitaMarcaModel
+@model TorneoFutbolDptl.App.Frontend.Pages.Partidos.AddPartidoVisitaMarcaModel
 @{
 }
+<h1>Asignar Marcador Visitante</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="partido.Id"></label>
+        <input asp-for="partido.Id" class="form-control" readonly>
+    </div>    
+    <div class="form-group">
+        <label asp-for="partido.EquipoVisitaMarca"></label>
+        <input asp-for="partido.EquipoVisitaMarca" class="form-control">
+   
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+<br>
+<a class="btn btn-secondary" asp-page="./Index">Cancelar</a>
