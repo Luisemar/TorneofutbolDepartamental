@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using TorneoFutbolDptl.App.Dominio;
 using TorneoFutbolDptl.App.Persistencia;
 
-namespace TorneoFutbolDptl.App.Frontend.Pages.Equipos
+namespace TorneoFutbolDptl.App.Frontend.Pages.Equipos 
 {
     public class IndexModel : PageModel
     {

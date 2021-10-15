@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbolDptl.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace TorneoFutbolDptl.App.Persistencia
 {
@@ -8,17 +9,22 @@ namespace TorneoFutbolDptl.App.Persistencia
     {
         private readonly AppContext _appContext = new AppContext();
 
-        Equipo IRepositorioEquipo.AddEquipo(Equipo equipo)        
+        Equipo IRepositorioEquipo.AddEquipo(Equipo equipo)
         {
             var EquipoAdicionado = _appContext.Equipos.Add(equipo);
             _appContext.SaveChanges();
             return EquipoAdicionado.Entity;
 
         }
-       
+
         Equipo IRepositorioEquipo.GetEquipo(int idEquipo)
         {
-            return _appContext.Equipos.Find(idEquipo);
+            var equipo = _appContext.Equipos
+             .Where(p => p.Id == idEquipo)
+             .Include(p => p.Municipio)
+             .Include(p => p.DirectorTecnico)
+             .FirstOrDefault();
+            return equipo;
         }
 
         void IRepositorioEquipo.DeleteEquipo(int idEquipo)
@@ -28,50 +34,60 @@ namespace TorneoFutbolDptl.App.Persistencia
                 return;
             _appContext.Equipos.Remove(equipoEncontrado);
             _appContext.SaveChanges();
-        } 
-        
+        }
+
         IEnumerable<Equipo> IRepositorioEquipo.GetAllEquipos()
         {
-            return _appContext.Equipos;
+           
+            return _appContext.Equipos
+             .Include(p => p.Municipio)
+             .Include(p => p.DirectorTecnico);
+        
         }
 
         public Equipo UpdateEquipo(Equipo equipo)
         {
-            var equipoEncontrado= _appContext.Equipos.FirstOrDefault(p => p.Id==equipo.Id);
-            if (equipoEncontrado !=null)
+            var equipoEncontrado = _appContext.Equipos.FirstOrDefault(p => p.Id == equipo.Id);
+            if (equipoEncontrado != null)
             {
-                equipoEncontrado.Nombre=equipo.Nombre;
+                equipoEncontrado.Nombre = equipo.Nombre;
                 _appContext.SaveChanges();
             }
-            return equipoEncontrado; 
-        }           
+            return equipoEncontrado;
+        }
 
         // Código ya implementado
         Municipio IRepositorioEquipo.AsignarMunicipioEquipo(int idEquipo, int idMunicipio)
-        { var equipoEncontrado = _appContext.Equipos.FirstOrDefault(p => p.Id == idEquipo);
-        if ( equipoEncontrado != null)
-            { var municipioEncontrado = _appContext.Municipios.FirstOrDefault(m => m.Id == idMunicipio);
-        if ( municipioEncontrado != null)
-            { equipoEncontrado.Municipio = municipioEncontrado;
-           _appContext.SaveChanges();
-             }
-          return municipioEncontrado;
-          }
-        return null;
+        {
+            var equipoEncontrado = _appContext.Equipos.FirstOrDefault(p => p.Id == idEquipo);
+            if (equipoEncontrado != null)
+            {
+                var municipioEncontrado = _appContext.Municipios.FirstOrDefault(m => m.Id == idMunicipio);
+                if (municipioEncontrado != null)
+                {
+                    equipoEncontrado.Municipio = municipioEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return municipioEncontrado;
+            }
+            return null;
         }
 
         // Código ya implementado
         DirectorTecnico IRepositorioEquipo.AsignarDirectorTecnico(int idEquipo, int idDirectorTecnico)
-        { var equipoEncontrado = _appContext.Equipos.FirstOrDefault(p => p.Id == idEquipo);
-        if ( equipoEncontrado != null)
-            { var directorTecnicoEncontrado = _appContext.DirectorTecnicos.FirstOrDefault(m => m.Id == idDirectorTecnico);
-        if ( directorTecnicoEncontrado != null)
-            { equipoEncontrado.DirectorTecnico = directorTecnicoEncontrado;
-           _appContext.SaveChanges();
-             }
-          return directorTecnicoEncontrado;
-          }
-        return null;
+        {
+            var equipoEncontrado = _appContext.Equipos.FirstOrDefault(p => p.Id == idEquipo);
+            if (equipoEncontrado != null)
+            {
+                var directorTecnicoEncontrado = _appContext.DirectorTecnicos.FirstOrDefault(m => m.Id == idDirectorTecnico);
+                if (directorTecnicoEncontrado != null)
+                {
+                    equipoEncontrado.DirectorTecnico = directorTecnicoEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return directorTecnicoEncontrado;
+            }
+            return null;
         }
 
         IEnumerable<Equipo> IRepositorioEquipo.SearchEquipos(string nombre)

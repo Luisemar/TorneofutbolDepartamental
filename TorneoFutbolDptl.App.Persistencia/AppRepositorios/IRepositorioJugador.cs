@@ -12,7 +12,7 @@ namespace TorneoFutbolDptl.App.Persistencia
         Jugador UpdateJugador(Jugador jugador);
         Equipo AsignarEquipoJugador(int idJugador, int idEquipo);
         Posicion AsignarPosicionJugador(int idJugador, int idPosicion);
-        IEnumerable<Jugador> SearchJugadores(string nombre); 
+        IEnumerable<Jugador> SearchJugadores(string nombre);  
         
         
         

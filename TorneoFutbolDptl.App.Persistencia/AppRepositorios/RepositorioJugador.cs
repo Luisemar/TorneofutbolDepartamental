@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using TorneoFutbolDptl.App.Dominio;
+using Microsoft.EntityFrameworkCore;
 
 namespace TorneoFutbolDptl.App.Persistencia
 {
@@ -38,7 +38,9 @@ namespace TorneoFutbolDptl.App.Persistencia
         
         IEnumerable<Jugador> IRepositorioJugador.GetAllJugadores()
         {
-            return _appContext.Jugadores;
+            return _appContext.Jugadores
+            .Include(p => p.Equipo)
+            .Include(p => p.Posicion);
         }
 
         public Jugador UpdateJugador(Jugador jugador)

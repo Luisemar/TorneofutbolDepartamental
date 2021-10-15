@@ -25,8 +25,24 @@
         {
             <tr>
                 <td>@equipo.Nombre</td>
-                <td>@equipo.Municipio</td>
-                <td>@equipo.DirectorTecnico</td>
+                
+                    @if (equipo.Municipio == null)
+                    {
+                       <td>Sin asignar</td> 
+                    }
+                    else
+                    {
+                       <td> @equipo.Municipio.Nombre</td>
+                    }
+                 @if (equipo.DirectorTecnico == null)
+                    {
+                       <td>Sin asignar</td> 
+                    }
+                    else
+                    {
+                       <td> @equipo.DirectorTecnico.Nombre</td>
+                    }  
+                
                 <td>
                     <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@equipo.Id">Detalles</a>
                     <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@equipo.Id">Editar</a>
