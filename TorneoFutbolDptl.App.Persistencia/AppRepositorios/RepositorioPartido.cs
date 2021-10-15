@@ -3,8 +3,6 @@ using System.Linq;
 using TorneoFutbolDptl.App.Dominio;
 using Microsoft.EntityFrameworkCore;
 
-
-
 namespace TorneoFutbolDptl.App.Persistencia
 {
     public class RepositorioPartido : IRepositorioPartido
@@ -28,58 +26,39 @@ namespace TorneoFutbolDptl.App.Persistencia
         return partido;
         }
 
-<<<<<<< HEAD
-        Partido IRepositorioPartido.GetPartidoEl(int idPartido)
-        {
-            var partido = _appContext.Partidos
-                .Where(p => p.Id == idPartido)
-                .Include(p => p.EquipoLocal)
-=======
         Partido IRepositorioPartido.GetPartidoEV(int idPartido)
         {
             var partido = _appContext.Partidos
                 .Where(p => p.Id == idPartido)
                 .Include(p => p.EquipoVisita)
->>>>>>> Aleja1
                 .FirstOrDefault();
         return partido;                
         }
 
-<<<<<<< HEAD
-
-        Partido IRepositorioPartido.GetPartidoEstadio(int idPartido)
-        {
-            var partido = _appContext.Partidos
-                .Where(p => p.Id == idPartido)
-                .Include(p => p.Estadio)
-                .FirstOrDefault();
-        return partido;                
-        }        
-
-        public Partido UpdatePartidoELM(Partido partido)
-=======
         public Partido UpdatePartidoEVM(Partido partido)
->>>>>>> Aleja1
         {
             var partidoEncontrado= _appContext.Partidos.FirstOrDefault(p => p.Id==partido.Id);
             if (partidoEncontrado !=null)
             {
                 partidoEncontrado.Id=partido.Id;                
-<<<<<<< HEAD
-                partidoEncontrado.EquipoLocalMarca=partido.EquipoLocalMarca;                              
-                _appContext.SaveChanges();
-            }
-            return partidoEncontrado; 
-        }          
-
-
-=======
                 partidoEncontrado.EquipoVisitaMarca=partido.EquipoVisitaMarca;                              
                 _appContext.SaveChanges();
             }
             return partidoEncontrado; 
         }   
->>>>>>> Aleja1
+	
+	public Partido UpdatePartidoELM(Partido partido)
+        {
+            var partidoEncontrado= _appContext.Partidos.FirstOrDefault(p => p.Id==partido.Id);
+            if (partidoEncontrado !=null)
+            {
+                partidoEncontrado.Id=partido.Id;                
+                partidoEncontrado.EquipoLocalMarca=partido.EquipoLocalMarca;                              
+                _appContext.SaveChanges();
+            }
+            return partidoEncontrado; 
+        } 
+
         void IRepositorioPartido.DeletePartido(int idPartido)
         {
             var partidoEncontrado = _appContext.Partidos.Find(idPartido);
@@ -129,19 +108,6 @@ namespace TorneoFutbolDptl.App.Persistencia
         return null;
         }
 
-        // Código ya implementado
-        Equipo IRepositorioPartido.AsignarEquipoELPartido(int idPartido, int idEquipo)
-        { var partidoEncontrado = _appContext.Partidos.FirstOrDefault(p => p.Id == idPartido);
-        if ( partidoEncontrado != null)
-            { var equipoEncontrado = _appContext.Equipos.FirstOrDefault(m => m.Id == idEquipo);
-        if ( equipoEncontrado != null)
-            { partidoEncontrado.EquipoLocal = equipoEncontrado.Id;
-           _appContext.SaveChanges();
-             }
-          return equipoEncontrado;
-          }
-        return null;
-        }
 
         // Código ya implementado
        Estadio IRepositorioPartido.AsignarEstadioPartido(int idPartido, int idEstadio)
@@ -170,6 +136,7 @@ namespace TorneoFutbolDptl.App.Persistencia
           }
         return null;
         }
+
         Equipo IRepositorioPartido.AsignarEquipoPartido(int idPartido, int idEquipo)
         { var partidoEncontrado = _appContext.Partidos.FirstOrDefault(p => p.Id == idPartido);
         if ( partidoEncontrado != null)
@@ -183,5 +150,19 @@ namespace TorneoFutbolDptl.App.Persistencia
           }
         return null;
         }
+	
+	 Equipo IRepositorioPartido.AsignarEquipoELPartido(int idPartido, int idEquipo)
+        { var partidoEncontrado = _appContext.Partidos.FirstOrDefault(p => p.Id == idPartido);
+        if ( partidoEncontrado != null)
+            { var equipoEncontrado = _appContext.Equipos.FirstOrDefault(m => m.Id == idEquipo);
+        if ( equipoEncontrado != null)
+            { partidoEncontrado.EquipoLocal = equipoEncontrado.Id;
+           _appContext.SaveChanges();
+             }
+          return equipoEncontrado;
+          }
+        return null;
+        }
+
     }
 }
