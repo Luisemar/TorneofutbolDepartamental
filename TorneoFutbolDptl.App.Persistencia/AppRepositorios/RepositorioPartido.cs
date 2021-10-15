@@ -35,6 +35,24 @@ namespace TorneoFutbolDptl.App.Persistencia
         return partido;                
         }
 
+            Partido IRepositorioPartido.GetPartidoEl(int idPartido)
+        {
+            var partido = _appContext.Partidos
+                .Where(p => p.Id == idPartido)
+                .Include(p => p.EquipoLocal)
+                .FirstOrDefault();
+        return partido;                
+        }    
+
+        Partido IRepositorioPartido.GetPartidoEstadio(int idPartido)
+        {
+            var partido = _appContext.Partidos
+                .Where(p => p.Id == idPartido)
+                .Include(p => p.Estadio)
+                .FirstOrDefault();
+        return partido;                
+        }
+
         public Partido UpdatePartidoEVM(Partido partido)
         {
             var partidoEncontrado= _appContext.Partidos.FirstOrDefault(p => p.Id==partido.Id);
@@ -137,7 +155,7 @@ namespace TorneoFutbolDptl.App.Persistencia
         return null;
         }
 
-        Equipo IRepositorioPartido.AsignarEquipoPartido(int idPartido, int idEquipo)
+        Equipo IRepositorioPartido.AsignarEquipoEVPartido(int idPartido, int idEquipo)
         { var partidoEncontrado = _appContext.Partidos.FirstOrDefault(p => p.Id == idPartido);
         if ( partidoEncontrado != null)
             { var equipoEncontrado = _appContext.Equipos.FirstOrDefault(m => m.Id == idEquipo);

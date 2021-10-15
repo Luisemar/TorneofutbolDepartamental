@@ -126,3 +126,4 @@ C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\DesempenoEquipos\Delete.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\DesempenoEquipos\Details.cshtml.g.cs
 C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\DesempenoEquipos\Edit.cshtml.g.cs
+C:\Torneos\TorneofutbolDepartamental\TorneoFutbolDptl.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\AddDT.cshtml.g.cs

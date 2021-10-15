@@ -30,7 +30,7 @@ namespace TorneoFutbolDptl.App.Frontend.Pages.Partidos
 
         public IActionResult OnPost(int idPartido, int idEquipo)
         {
-            _repoPartido.AsignarEquipoPartido(idPartido, idEquipo);
+            _repoPartido.AsignarEquipoEVPartido(idPartido, idEquipo);
             return RedirectToPage("Details", new{id = idPartido});
         }
     }

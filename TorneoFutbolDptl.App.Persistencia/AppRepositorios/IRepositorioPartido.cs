@@ -18,7 +18,8 @@ namespace TorneoFutbolDptl.App.Persistencia
         Arbitro  AsignarArbitroPartido(int idPartido, int idArbitro);
         Estadio  AsignarEstadioPartido(int idPartido, int idEstadio);
         Novedad  AsignarNovedadPartido(int idPartido, int idNovedad);
-        Equipo  AsignarEquipoELPartido(int idPartido, int idEquipo);        
+        Equipo  AsignarEquipoELPartido(int idPartido, int idEquipo);   
+        Equipo  AsignarEquipoEVPartido(int idPartido, int idEquipo);       
        
     }
 }
