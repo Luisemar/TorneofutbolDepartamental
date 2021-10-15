@@ -1,0 +1,32 @@
+﻿@page
+@using TorneoFutbolDptl.App.Dominio
+@model TorneoFutbolDptl.App.Frontend.Pages.DesempenoEquipos.EditModel
+@{
+}
+<h1>Editar Desempeno Equipo</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="desempenoEquipo.Id"></label>
+        <input asp-for="desempenoEquipo.Id" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="desempenoEquipo.PuntosAcumulados"></label>
+        <input asp-for="desempenoEquipo.PuntosAcumulados" class="form-control">
+        <span asp-validation-for="desempenoEquipo.PuntosAcumulados" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="desempenoEquipo.PartidosJugados"></label>
+        <input asp-for="desempenoEquipo.PartidosJugados" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="desempenoEquipo.PartidosGanados"></label>
+        <input asp-for="desempenoEquipo.PartidosGanados" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="desempenoEquipo.PartidosPerdidos"></label>
+        <input asp-for="desempenoEquipo.PartidosPerdidos" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+</form>
+<br>
+<a class="btn btn-secondary" asp-page="./Index">Cancelar</a>

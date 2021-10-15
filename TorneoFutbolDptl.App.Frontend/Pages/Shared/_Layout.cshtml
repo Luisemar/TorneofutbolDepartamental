@@ -7,10 +7,33 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/style.css" />
+    <style>
+        #degr{
+            height: 1200px;
+            background-color:blue;
+            background-image: linear-gradient(#5499c7, #d4e6f1);
+        }
+        #menu{
+            height: 80px;
+            background-color:blue;
+            background-image: linear-gradient(#fadbd8, #ecf0f1);
+        }
+        body{
+            color: white;
+        }
+         h1{
+            color: white;
+        }
+         h2{
+            color: white;
+        }
+
+        
+    </style>
 </head>
-<body>
+<body id="degr">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav id="menu" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Torneo de Fútbol</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"

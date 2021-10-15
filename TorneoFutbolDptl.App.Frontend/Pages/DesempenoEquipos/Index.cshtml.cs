@@ -22,6 +22,7 @@ namespace TorneoFutbolDptl.App.Frontend.Pages.DesempenoEquipos
         public void OnGet()
         {
             desempenoEquipos = _repoDesempenoEquipo.GetAllDesempenoEquipos();
+            
         }
     }
 }

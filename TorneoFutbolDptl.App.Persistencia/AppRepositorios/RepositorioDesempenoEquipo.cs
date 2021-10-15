@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using TorneoFutbolDptl.App.Dominio;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace TorneoFutbolDptl.App.Persistencia
 {
@@ -18,7 +20,11 @@ namespace TorneoFutbolDptl.App.Persistencia
        
         DesempenoEquipo IRepositorioDesempenoEquipo.GetDesempenoEquipo(int idDesempenoEquipo)
         {
-            return _appContext.DesempenoEquipos.Find(idDesempenoEquipo);
+            var desempenoEquipo = _appContext.DesempenoEquipos
+                .Where(p => p.Id == idDesempenoEquipo)
+                .Include(p => p.Equipo)
+                .FirstOrDefault();
+        return desempenoEquipo;
         }
 
         void IRepositorioDesempenoEquipo.DeleteDesempenoEquipo(int idDesempenoEquipo)
@@ -30,11 +36,14 @@ namespace TorneoFutbolDptl.App.Persistencia
             _appContext.SaveChanges();
         } 
         
-        IEnumerable<DesempenoEquipo> IRepositorioDesempenoEquipo.GetAllDesempenoEquipos()
+       IEnumerable<DesempenoEquipo> IRepositorioDesempenoEquipo.GetAllDesempenoEquipos()
         {
-            return _appContext.DesempenoEquipos;
+           
+           List<DesempenoEquipo> temporal = _appContext.DesempenoEquipos.OrderByDescending(o => o.PuntosAcumulados).ToList();
+            
+        return temporal;
         }
-
+        
         public DesempenoEquipo UpdateDesempenoEquipo(DesempenoEquipo desempenoEquipo)
         {
             var desempenoEquipoEncontrada= _appContext.DesempenoEquipos.FirstOrDefault(p => p.Id==desempenoEquipo.Id);

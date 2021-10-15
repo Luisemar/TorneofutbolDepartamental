@@ -1,0 +1,51 @@
+﻿@page
+@model TorneoFutbolDptl.App.Frontend.Pages.DesempenoEquipos.DetailsModel
+@{
+}
+<h1>Detalles Desempeño Equipo</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Equipo</th>
+         @if (Model.desempenoEquipo.Equipo == null)
+         {
+            <th>
+                <a class="btn btn-primary" asp-page="./AddEquipo" asp-route-id="@Model.desempenoEquipo.Id">Asignar Equipo</a>
+            </th>  
+         }
+        else
+        {
+            <td>@Model.desempenoEquipo.Equipo.Nombre</td>
+        }         
+    
+    <tr>
+        <th scope="col">Partidos jugados</th>
+        <td>@Model.desempenoEquipo.PartidosJugados</td>
+    </tr>
+    <tr>
+        <th scope="col">Partidos ganados</th>
+        <td>@Model.desempenoEquipo.PartidosGanados</td>
+    </tr>
+    <tr>
+        <th scope="col">Partidos perdidos</th>
+        <td>@Model.desempenoEquipo.PartidosPerdidos</td> 
+    </tr>
+    <tr>
+        <th scope="col">Partidos Empatados</th>
+        <td>@Model.desempenoEquipo.PartidosEmpatados</td> 
+    </tr>
+    <tr>
+        <th scope="col">Goles a favor</th>
+        <td>@Model.desempenoEquipo.GolesAFavor</td> 
+    </tr>
+    <tr>
+        <th scope="col">Goles en contra</th>
+        <td>@Model.desempenoEquipo.GolesEnContra</td> 
+    </tr>
+        <tr>
+        <th scope="col">Total puntos</th>
+        <td>@Model.desempenoEquipo.PuntosAcumulados</td> 
+    </tr>
+</table>
+<a class="btn btn-primary" asp-page="./Edit" asp-route-id="@Model.desempenoEquipo.Id">Editar</a>
+</table>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>
