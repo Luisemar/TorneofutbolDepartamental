@@ -29,7 +29,6 @@ C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Persistencia\obj\Debug
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.AssemblyInfoInputs.cache
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.AssemblyInfo.cs
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.csproj.CoreCompileInputs.cache
-C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.csproj.CopyComplete
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.dll
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Persistencia\obj\Debug\net5.0\ref\TorneoFutbolDptl.App.Persistencia.dll
 C:\Torneos\TorneoFutbolDepartamental\TorneoFutbolDptl.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDptl.App.Persistencia.pdb
