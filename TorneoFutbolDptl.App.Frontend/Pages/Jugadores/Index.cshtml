@@ -8,7 +8,7 @@
     <input type="text" name="b" id="b" asp-for="@Model.bActual" class="my-1 mr-sm-2">
     <button type="submit" class="btn btn-primary my-1">Buscar</button>
 </form>
-<h1> Lista de Jugadores ⛹</h1>
+<h1> Lista de Jugadores</h1>
 <br>
 <a class="btn btn-primary" asp-page="./Create">Crear Jugador</a>
 <p></p>
@@ -30,8 +30,23 @@
             <tr>
                 <td>@jugador.Nombre</td>
                 <td>@jugador.Numero</td>
-                <td>@jugador.Equipo</td>
+                @if (jugador.Equipo == null)
+                {
+                    <td>Sin asignar</td>
+                }
+                else
+                {
+                    <td>@jugador.Equipo.Nombre</td>
+                } 
+                @if (jugador.Posicion == null)
+                {
+                    <td>Sin asignar</td>
+                }
+                else
+                {
                 <td>@jugador.Posicion.Nombre</td>
+                }                               
+
                 <td>
                     <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@jugador.Id">Detalles</a>
                     <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@jugador.Id">Editar</a>

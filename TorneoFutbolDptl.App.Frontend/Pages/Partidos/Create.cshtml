@@ -6,39 +6,12 @@
 <h1>Agregar Partido</h1>
 <form method="post">
 
-    <div class="form-group">
-        <label asp-for="partido.EquipoLocal"></label>
-        <input asp-for="partido.EquipoLocal" class="form-control"placeholder="Once Cladas">
-        <span asp-validation-for="partido.EquipoLocal" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="partido.EquipoVisita"></label>
-        <input asp-for="partido.EquipoVisita" class="form-control"placeholder="Cúcuta Deportivo">
-    </div>
-    <div class="form-group">
-        <label asp-for="partido.EquipoLocalMarca"></label>
-        <input asp-for="partido.EquipoLocalMarca" class="form-control"placeholder="1">
-    </div>
-    <div class="form-group">
-        <label asp-for="partido.EquipoVisitaMarca"></label>
-        <input asp-for="partido.EquipoVisitaMarca" class="form-control"placeholder="1">
-    </div>
+ 
     <div class="form-group">
         <label asp-for="partido.FechaHora"></label>
         <input asp-for="partido.FechaHora" class="form-control"placeholder="23/11/2021 12:00 p.m.">
     </div>
-    <div class="form-group">
-        <label asp-for="partido.Arbitro"></label>
-        <input asp-for="partido.Arbitro" class="form-control"placeholder="Dario Gómez">
-    </div>
-    <div class="form-group">
-        <label asp-for="partido.Estadio"></label>
-        <input asp-for="partido.Estadio" class="form-control"placeholder="Centenario">
-    </div>
-    <div class="form-group">
-        <label asp-for="partido.Novedad"></label>
-        <input asp-for="partido.Novedad" class="form-control">
-    </div>
+ 
     <button type="submit" class="btn btn-primary">Guardar</button>
 </form>
 <a class="btn btn-secondary" asp-page="./Index">Cancelar</a>
